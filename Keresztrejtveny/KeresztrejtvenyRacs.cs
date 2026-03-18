@@ -46,6 +46,19 @@ namespace Keresztrejtveny
 			}
 		}
 
+		public void KiirRacs()
+		{
+			for(int sorindex = 0; sorindex<SorokSzama; sorindex++)
+			{
+				for(int oszlopindex = 0; oszlopindex<OszlopokSzama; oszlopindex++)
+				{
+					Console.Write(Racs[sorindex, oszlopindex]);
+				}
+				Console.WriteLine();
+			}
+
+		}
+
 
 	}
 }
