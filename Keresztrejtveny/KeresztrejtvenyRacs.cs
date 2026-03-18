@@ -12,6 +12,14 @@ namespace Keresztrejtveny
 		private char[,] Racs;
 		private int[,] Sorszamok;
 
+		public KeresztrejtvenyRacs(string forras)
+		{
+			this.Adatsorok = new List<string>();
+			BeolvasAdatsorok(forras);
+			Racs = new char[SorokSzama, OszlopokSzama];
+			FeltoltRacs();
+		}
+
 		public char[,] Racs1 { get => Racs; set => Racs = value; }
 		public int[,] Sorszamok1 { get => Sorszamok; set => Sorszamok = value; }
 
@@ -37,6 +45,7 @@ namespace Keresztrejtveny
 				}
 			}
 		}
+
 
 	}
 }

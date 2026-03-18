@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            
-        }
+            KeresztrejtvenyRacs r1 = new KeresztrejtvenyRacs("kr1.txt");
+		}
     }
 }
