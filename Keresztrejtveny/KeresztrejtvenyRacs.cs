@@ -59,6 +59,29 @@ namespace Keresztrejtveny
 
 		}
 
+		public void LeghosszabbSzo()
+		{
+			int max = 0;
+			for(int sorindex = 0; sorindex<SorokSzama; sorindex++)
+			{
+				for(int oszlopindex = 0; oszlopindex<OszlopokSzama; oszlopindex++)
+				{
+					if(Racs[sorindex, oszlopindex] != '#')
+					{
+						int hossz = 1;
+						while(oszlopindex+hossz < OszlopokSzama && Racs[sorindex, oszlopindex+hossz] != '#')
+						{
+							hossz++;
+						}
+						if(hossz > max)
+						{
+							max = hossz;
+						}
+					}
+				}
+			}
+		}
+
 
 	}
 }

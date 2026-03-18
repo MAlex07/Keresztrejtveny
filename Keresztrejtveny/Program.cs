@@ -12,6 +12,9 @@
 
 			Console.WriteLine("6. feladat:");
             r1.KiirRacs();
+
+			Console.WriteLine("7. feladat");
+			Console.WriteLine($"A leghosszabb szó hossza: {r1.LeghosszabbSzo}");
 		}
     }
 }
